@@ -2,6 +2,7 @@ package com.hiking.hkimgloader.loader;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.hiking.hkimgloader.R;
@@ -118,10 +119,15 @@ public class HkImageLoader {
     public  void displayImage(ImageView imageView, String uri
             , DisplayConfig displayConfig, ImageListener imageListener)
     {
+        Log.d("TAG","HkImageLoader displayImage");
         //实例化一个请求
         BitmapRequest bitmapRequest=new BitmapRequest(imageView,uri,displayConfig,imageListener);
         //添加到队列里面
         mRequestQueue.addRequest(bitmapRequest);
+        if (!mRequestQueue.isAlive()){
+            mRequestQueue.start();
+
+        }
     }
     public static  interface ImageListener{
         /**

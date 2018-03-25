@@ -91,4 +91,11 @@ public class RequestQueue {
             }
         }
     }
+
+    public boolean isAlive(){
+        if(this.mDispachers[0] != null) {
+            return this.mDispachers[0].isAlive();
+        }
+        return false;
+    }
 }
