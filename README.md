@@ -1,5 +1,5 @@
 # HkImgLoader
-仿Glide图片加载框架；参考AynctaskVolley、Glide，功能待完善
+仿Glide图片加载框架；参考Aynctask、Volley、Glide，大概的架子出来了，细节待完善
 # 事例
 HkImageLoader.getInstance(context).displayImage(view,url);
 # 类图
