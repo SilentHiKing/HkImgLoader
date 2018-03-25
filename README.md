@@ -3,6 +3,6 @@
 # 事例
 HkImageLoader.getInstance(context).displayImage(view,url);
 # 类图
-![类图](https://github.com/SilentHiKing/HkImgLoader/tree/master/doc/HkImgLoader类图.jpg)
+![image](https://github.com/SilentHiKing/HkImgLoader/blob/master/doc/HkImgLoader%E7%B1%BB%E5%9B%BE.jpg)
 
 
